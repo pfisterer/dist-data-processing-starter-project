@@ -54,6 +54,13 @@
 			<version>1.4.0</version>
 		</dependency>
 
+		<!-- https://github.com/orbisgis/cts -->
+		<dependency>
+			<groupId>org.orbisgis</groupId>
+			<artifactId>cts</artifactId>
+			<version>1.4.0</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.apache.storm</groupId>
