@@ -13,7 +13,6 @@
 
 		<spark.version>1.6.2</spark.version>
 		<scala.binary.version>2.10</scala.binary.version>
-
 	</properties>
 
 	<dependencies>
@@ -41,7 +40,8 @@
 			<version>${spark.version}</version>
 		</dependency>
 
-		<dependency> <!-- For Spark-Kafka connectivity -->
+		<!-- For Spark-Kafka connectivity -->
+		<dependency>
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-streaming-kafka_${scala.binary.version}</artifactId>
 			<version>${spark.version}</version>

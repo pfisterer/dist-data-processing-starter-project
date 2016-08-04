@@ -35,6 +35,15 @@ public class Main {
 		// Return "Hello World" at URL /hello
 		spark.Spark.get("/hello", (req, res) -> "Hello World");
 
+		spark.Spark.get("/status", (req, res) -> {
+			String latitude = req.queryParams("lat");
+			String longitude = req.queryParams("long");
+
+			System.out.println("lat = " + latitude + " long=" + longitude);
+
+			return "1";
+		});
+
 		// Wait for server to be initialized
 		spark.Spark.awaitInitialization();
 	}

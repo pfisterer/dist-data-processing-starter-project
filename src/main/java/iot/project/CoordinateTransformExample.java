@@ -55,7 +55,8 @@ public class CoordinateTransformExample {
 		// OpenStreetMap (http://wiki.openstreetmap.org/wiki/EPSG:3857)
 		CoordinateTransformHelper transformation = new CoordinateTransformHelper("EPSG:4326", "EPSG:3857");
 
-		double[] coord = new double[] { 54.321, 9.876 };
+		//double[] coord = new double[] { 54.321, 9.876 };
+		double[] coord = new double[] { 49, 8 };
 		double[] transformedCoord = transformation.transform(coord);
 
 		System.out.println(coord[0] + ", " + coord[1] + " -> " + transformedCoord[0] + ", " + transformedCoord[1]);
